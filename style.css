@@ -27,15 +27,15 @@
 }
 
 :root {
-	--background: #09090b; /* Майже чорний */
-	--header: linear-gradient(-90deg, #581c87, #701a75, #a21caf); /* Пурпуровий шторм */
-	--btn: #bef264; /* Неоновий лайм */
-	--promo: rgba(162, 28, 175, 0.2);
-	--table: rgba(24, 24, 27, 0.9);
-	--white: #f5f3ff;
-	--black: #09090b;
+	--background: #1a0a0a; /* Майже чорний вишневий */
+	--header: linear-gradient(-90deg, #450a0a, #7f1d1d, #991b1b); /* Градієнт дорогого вина */
+	--btn: #fde047; /* Колір шампанського */
+	--promo: rgba(153, 27, 27, 0.2);
+	--table: rgba(45, 10, 10, 0.9);
+	--white: #fff7ed;
+	--black: #1a0a0a;
 	--title: #ffffff;
-	--btn-accent: linear-gradient(135deg, #d9f99d, #bef264);
+	--btn-accent: linear-gradient(135deg, #fef08a, #fde047);
 }
 
 * {
@@ -126,12 +126,12 @@ header {
 	background: var(--header);
 	backdrop-filter: blur(2px);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 0 0 10% 10%;
 	max-width: 100vw;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	position: sticky;
 	top: 0;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 header img {
@@ -150,8 +150,8 @@ header img {
 	font-size: 1.2rem;
 	border: 1px solid var(--white);
 	color: var(--white);
+	border-radius: 18px;
 	margin-right: 50px;
-	transform: skewX(-5deg);
 }
 
 .green-btn {
@@ -160,7 +160,7 @@ header img {
 	background-color: var(--btn);
 	color: var(--title);
 	border: 2px solid rgba(255, 255, 255, 0.3);
-	transform: skewX(-5deg);
+	border-radius: 18px;
 	text-align: center;
 }
 
@@ -181,7 +181,9 @@ header img {
 	display: flex;
 	flex-wrap: wrap;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	box-shadow: 0 0 15px var(--btn);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 0 5px var(--btn);
+	border-radius: 10% 10% 18px 18px;
 	padding: 20px;
 }
 
@@ -378,6 +380,7 @@ footer a:hover {
 		padding: 6px 10px;
 		font-size: 0.9rem;
 		border: 1px solid var(--white);
+		border-radius: 10px;
 		margin-right: 10px;
 		text-align: center;
 	}
@@ -386,6 +389,7 @@ footer a:hover {
 		padding: 4px 8px;
 		font-size: 0.9rem;
 		background-color: var(--btn);
+		border-radius: 10px;
 		text-align: center;
 	}
 
@@ -408,6 +412,7 @@ footer a:hover {
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
+		border-radius: 18px 10% 18px 18px;
 	}
 
 	h1 {
